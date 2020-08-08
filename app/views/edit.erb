@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1>Edit <%=@article.name%></h1>
-    <form class="article" action="/posts/<%=@post.id%>" method="post">
+    <form class="article" action="/articles/<%=@post.id%>" method="post">
       <input id="hidden" type="hidden" name="_method" value="patch">
       <label for="name">Name:</label>
       <input id="name" type="text" name="name" value="<%=@post.name%>">
