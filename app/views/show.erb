@@ -6,7 +6,7 @@
   </head>
   <body>
     <h1><%=@article.name%></h1>
-    <p><%=@post.content%></p>
+    <p><%=@article.content%></p>
     <form class="delete" action="/posts/<%=@post.id%>/delete" method="post">
       <input id="hidden" type="hidden" name="_method" value="delete">
       <input id="delete" type="submit" name="delete" value="Delete">
